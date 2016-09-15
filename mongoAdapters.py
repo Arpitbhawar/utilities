@@ -1,6 +1,15 @@
 import pymongo
 from pymongo.errors import BulkWriteError
 import src.utils.config as cfg
+"""
+#readconfig utility
+import os, yaml
+
+def readConfig(name = None):
+    HERE = os.path.dirname(os.path.abspath(__file__))
+    CONFIG = yaml.load(open(os.path.join(HERE, '..', '..', 'conf', 'config.mis.yml')))
+    return CONFIG
+"""
 c = cfg.readConfig()
 
 class MongoDb():
