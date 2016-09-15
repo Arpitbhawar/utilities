@@ -7,7 +7,7 @@ import os, yaml
 
 def readConfig(name = None):
     HERE = os.path.dirname(os.path.abspath(__file__))
-    CONFIG = yaml.load(open(os.path.join(HERE, '..', '..', 'conf', 'config.mis.yml')))
+    CONFIG = yaml.load(open(os.path.join(HERE, 'conf', filename)))
     return CONFIG
 """
 c = cfg.readConfig()
