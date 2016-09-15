@@ -3,7 +3,7 @@ import time
 import MySQLdb
 import src.utils.config as cfg
 """
-ReadConfig utility
+#ReadConfig utility
 import os, yaml
 
 def readConfig(name = None):
